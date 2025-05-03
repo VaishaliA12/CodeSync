@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# CodeSync
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**CodeSync** is designed to revolutionize the way developers collaborate. It is a real-time collaborative code editor that brings teams together on a single platform, enabling seamless coding sessions. Built on the powerful trio of **Node.js**, **React.js**, and **Socket.io**, CodeSync ensures instant, smooth, and conflict-free synchronization of code changes.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- Multiple users can join a room and edit code collaboratively.  
+- Changes are reflected in real time for all participants. 
+- Copy button to easily share the room ID.  
+- Leave button to exit the session smoothly.  
+- Syntax highlighting support for multiple programming languages.  
+- Users can leave and rejoin a room to continue editing.  
+- User join/leave events are reflected instantly in the editor.  
 
-### `npm start`
+## 🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js  
+- Node.js  
+- Express.js  
+- Socket.io  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✅ Prerequisites
 
-### `npm test`
+Make sure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (v20.11.1)  
+- **npm** (v10.2.4)  
 
-### `npm run build`
+## 📦 Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/VaishaliA12/CodeSync.git
+   cd CodeSync
 
-### `npm run eject`
+2. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Create a .env file in the root directory of the project and add the following environment variable:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   REACT_APP_BACKEND_URL=http://localhost:5000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. To start the Client (Frontend), run:
 
-## Learn More
+   ```bash
+   npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. To start the Server (Backend), run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm run server:dev
